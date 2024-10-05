@@ -3,19 +3,36 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
-    background-color: #333;
     color: white;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    backdrop-filter: blur(16px);
+}
+
+.background-image {
+  background-image: url('../img/curse-isaac.gif');
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
 }
 
 #logo {
@@ -48,6 +65,7 @@ nav ul li a {
 .drawings {
     flex: 3;
     margin-right: 20px;
+    backdrop-filter: blur(16px);
 }
 
 .drawing-list {
@@ -57,38 +75,51 @@ nav ul li a {
 }
 
 .drawing {
-    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    max-width: 400px;
     flex-grow: 1;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    position: relative;
+}
+
+.drawings p {
+    font-size: 18px;
 }
 
 .drawing img {
     max-width: 100%;
     height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-button {
-    background-color: #ff9800;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
+.drawing:hover img {
+    filter: blur(5px);
 }
 
-button:hover {
-    background-color: #e68900;
+.drawing:hover p {
+  filter: blur(5px);
+}
+
+.drawing button {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  z-index: 1;
 }
 
 .winners {
     flex: 1;
-    background-color: #fff;
-    border: 1px solid #ccc;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
 }
 
 .winners ul {
@@ -102,18 +133,18 @@ button:hover {
 }
 
 footer {
-    background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    backdrop-filter: blur(16px);
 }
 
 footer ul {
     list-style: none;
     padding: 0;
+    display: flex; 
+    justify-content: center; 
 }
 
 footer ul li {
-    margin: 5px 0;
+    margin: 0 10px; 
 }
