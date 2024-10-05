@@ -60,13 +60,13 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     margin: 20px;
+    color: white;
 }
 
 .drawings {
-    flex: 3;
+    flex: 1;
     margin-right: 20px;
     backdrop-filter: blur(16px);
-    color: white;
 }
 
 .drawing-list {
@@ -88,7 +88,6 @@ nav ul li a {
 
 .drawings p {
     font-size: 18px;
-    color: white;
 }
 
 .drawing img {
@@ -115,8 +114,6 @@ nav ul li a {
 }
 
 .winners {
-    flex: 1;
-    color: white;
     padding: 20px;
     backdrop-filter: blur(16px);
 }
