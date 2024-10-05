@@ -109,12 +109,8 @@ nav ul li a {
   cursor: pointer;
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background: transparent;
-  border: none;
   z-index: 1;
 }
 
