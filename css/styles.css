@@ -66,6 +66,7 @@ nav ul li a {
     flex: 3;
     margin-right: 20px;
     backdrop-filter: blur(16px);
+    color: white;
 }
 
 .drawing-list {
@@ -87,6 +88,7 @@ nav ul li a {
 
 .drawings p {
     font-size: 18px;
+    color: white;
 }
 
 .drawing img {
@@ -118,6 +120,7 @@ nav ul li a {
 
 .winners {
     flex: 1;
+    color: white;
     padding: 20px;
     backdrop-filter: blur(16px);
 }

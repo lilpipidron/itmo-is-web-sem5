@@ -29,6 +29,7 @@ header {
 
 main {
   align-items: center;
+  color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
