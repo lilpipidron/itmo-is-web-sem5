@@ -171,7 +171,7 @@ nav ul li a {
   z-index: 3; 
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   .content-container {
     flex-direction: row;
     overflow-x: auto;
@@ -189,7 +189,7 @@ nav ul li a {
   }
 }
 
-@media (orientation: portrait) {
+@media screen and (orientation: portrait) {
   .content-container {
     flex-direction: column;
     overflow-y: auto;
@@ -249,7 +249,7 @@ nav ul li a {
   background-color: rgba(100, 100, 100, 0.3);
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .winners-grid {
     grid-template-columns: 1fr;
   }
