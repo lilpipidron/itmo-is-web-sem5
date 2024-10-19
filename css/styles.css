@@ -215,32 +215,45 @@ nav ul li a {
   }
 }
 
-.winners-table {
+.winners-grid {
+  display: grid;
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px; 
-  font-size: 14px; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background-color: #ddd;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-.winners-table thead {
+.winners-grid-header {
+  display: contents;
   background: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
 }
 
-.winners-table th, .winners-table td {
-  padding: 8px 10px; 
+.winners-grid-row {
+  display: contents;
+}
+
+.winners-grid-cell {
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid #ddd;
-  text-align: left;
 }
 
-.winners-table tbody tr:nth-child(odd) {
-  background-color: rgba(255, 255, 255, 0.1);
+.winners-grid-row:nth-child(odd) .winners-grid-cell {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.winners-table tbody tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.05);
+.winners-grid-row:nth-child(even) .winners-grid-cell {
+  background-color: rgba(100, 100, 100, 0.3);
 }
 
 @media (max-width: 600px) {
+  .winners-grid {
+    grid-template-columns: 1fr;
+  }
+
   .winners-table {
     font-size: 12px;
   }
