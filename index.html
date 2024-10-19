@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
-<div class="background-image" </div>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="розыгрыши, призы, выигрыш">
-    <meta name="description" content="Участвуйте в розыгрышах и выигрывайте крутые призы">
-    <title>Поезд мечт</title>
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="розыгрыши, призы, выигрыш">
+  <meta name="description" content="Участвуйте в розыгрышах и выигрывайте крутые призы">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поезд мечт</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
 
-  <body>
-    <header>
-      <img src="img/logo_tmp.png" alt="Поезд мечт" id="logo">
-      <nav>
-        <ul>
-          <li><a href="index.html">Текущие розыгрыши</a></li>
-          <li><a href="winners-reviews/index.html">Отзывы победителей</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <div class="background-image"></div>
 
-    <main>
-      <section class="content-container">
-        <section class="drawings">
-          <h2>Текущие розыгрыши</h2>
-          <div class="drawing-list">
-            <div class="drawing">
-              <img src="img/подзатыльник.gif" alt="Приз 1">
-              <p>Розыгрыш #1 - подзатыльник</p>
-              <button onclick="alert('Купили тикет!')"></button>
-            </div>
-            <div class="drawing">
-              <img src="img/povestka.jpeg" alt="Приз 2">
-              <p>Розыгрыш #2 - повестка</p>
-              <button onclick="alert('Купили тикет!')"></button>
-            </div>
-            <div class="drawing">
-              <img src="img/марафон_желаний.jpg" alt="Приз 3">
-              <p>Розыгрыш #3 - участие в марафоне</p>
-              <button onclick="alert('Купили тикет!')"></button>
-            </div>
-          </div>
-        </section>
-
-        <section class="winners">
-          <h2>Последние победители</h2>
-          <ul>
-            <li><strong>Никита Миловацкий</strong> - выиграл iPhone 15</li>
-            <li><strong>Александра Крючкова</strong> - выиграла что-то не розовое</li>
-            <li><strong>Константин Васильев</strong> - выиграл чоколадку</li>
-          </ul>
-        </section>
-      </section>
-    </main>
-
-    <footer id="contacts">
-      <h3>Контактная информация</h3>
+  <header>
+    <img src="img/logo_tmp.png" alt="Поезд мечт" id="logo">
+    <nav>
       <ul>
-        <li>Телефон: max_int + 1</li>
-        <li>Email: dreamtrain@obman.com</li>
-        <li>Адрес: пр. [object Object], д. 0x67f4, корп. undefined, г. stack overflow</li>
+        <li><a href="index.html">Текущие розыгрыши</a></li>
+        <li><a href="winners-reviews/index.html">Отзывы победителей</a></li>
+        <li><a href="#contacts">Контакты</a></li>
       </ul>
-      <p>&copy; 2024 DreamTrain Inc</p>
-    </footer>
-  </body>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-container">
+      <section class="drawings">
+        <h2>Текущие розыгрыши</h2>
+        <div class="drawing-list">
+          <div class="drawing">
+            <img src="img/подзатыльник.gif" alt="Приз 1">
+            <p>Розыгрыш #1 - подзатыльник</p>
+          </div>
+          <div class="drawing">
+            <img src="img/povestka.jpeg" alt="Приз 2">
+            <p>Розыгрыш #2 - повестка</p>
+          </div>
+          <div class="drawing">
+            <img src="img/марафон_желаний.jpg" alt="Приз 3">
+            <p>Розыгрыш #3 - участие в марафоне</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="winners">
+        <h2>Последние победители</h2>
+        <table class="winners-table">
+          <thead>
+            <tr>
+              <th>Имя</th>
+              <th>Приз</th>
+              <th>Дата</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Имя">Никита Миловацкий</td>
+              <td data-label="Приз">iPhone 15</td>
+              <td data-label="Дата">2024-04-01</td>
+            </tr>
+            <tr>
+              <td data-label="Имя">Александра Крючкова</td>
+              <td data-label="Приз">Не розовое</td>
+              <td data-label="Дата">2024-04-02</td>
+            </tr>
+            <tr>
+              <td data-label="Имя">Константин Васильев</td>
+              <td data-label="Приз">Чоколадка</td>
+              <td data-label="Дата">2024-04-03</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <h3>Контактная информация</h3>
+    <ul>
+      <li>Телефон: +1 (234) 567-8901</li>
+      <li>Email: dreamtrain@obman.com</li>
+      <li>Адрес: пр. Пример, д. 123, корп. 1, г. Москва</li>
+    </ul>
+    <p>&copy; 2024 DreamTrain Inc</p>
+  </footer>
+
+</body>
 
 </html>
