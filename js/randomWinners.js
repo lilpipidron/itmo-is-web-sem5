@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const names = await loadData("data/names");
   const surnames = await loadData("data/surnames");
   const prizes = await loadData("data/prizes");
-  const audio = new Audio("audio/gennadii-gorin-chihaet.mp3");
 
   function addRandomWinner() {
     const name = names[Math.floor(Math.random() * names.length)];
@@ -40,6 +39,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.querySelector(".winners-grid").appendChild(row);
 
     const randomDelay = Math.floor(Math.random() * n + 1) * 1000;
+    const audio = new Audio("audio/gennadii-gorin-chihaet.mp3");
     audio.play();
     setTimeout(addRandomWinner, randomDelay);
   }
