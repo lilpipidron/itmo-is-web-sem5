@@ -73,6 +73,7 @@ nav ul li a {
 }
 
 .reviews {
+  flex-grow: 1;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
@@ -97,13 +98,55 @@ nav ul li a {
   margin: 0;
 }
 
+
+.add-review {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  backdrop-filter: blur(16px);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.add-review h3 {
+  margin-top: 0;
+  color: white;
+}
+
+.add-review label {
+  color: white;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+
+.add-review input, .add-review textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.add-review button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
 footer {
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
   padding: 10px 20px;
-  height: 60px;
+  height: 13%; 
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

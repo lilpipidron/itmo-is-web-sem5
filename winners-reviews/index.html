@@ -11,6 +11,8 @@
 </head>
 
 <body>
+  <script src="../js/pageLoadStats.js"></script>
+  <script src="../js/addReview.js"></script>
   <div class="background-image"></div>
 
   <header>
@@ -31,11 +33,25 @@
         <p><strong>Никита Миловацкий:</strong> АЧУМЕТЬ РЕАЛЬНО СПАСИБО БРАТИШКА ВОВЕК НЕ ЗАБУДУ</p>
       </div>
       <div class="review">
-        <p><strong>Саид Франтц:</strong> Участвовала в розыгрыше PlayStation 5, и я победила! Рекомендую всем участвовать, отличные шансы!</p>
+        <p><strong>Саид Франтц:</strong> Участвовала в розыгрыше PlayStation 5, и я победила! Рекомендую всем
+          участвовать, отличные шансы!</p>
       </div>
       <div class="review">
         <p><strong>Андрей Тимченко:</strong> кхааааайф. кококола</p>
       </div>
+    </section>
+
+    <section class="add-review">
+      <h3>Оставить отзыв</h3>
+      <form id="reviewForm">
+        <label for="username">Ваше имя:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="reviewText">Ваш отзыв:</label>
+        <textarea id="reviewText" name="reviewText" required></textarea>
+
+        <button type="submit">Отправить отзыв</button>
+      </form>
     </section>
   </main>
 
@@ -46,6 +62,7 @@
       <li>Email: dreamtrain@obman.com</li>
       <li>Адрес: пр. Пример, д. 123, корп. 1, г. Москва</li>
     </ul>
+    <div id="loadStats"></div>
     <p>&copy; 2024 DreamTrain Inc</p>
   </footer>
 </body>
