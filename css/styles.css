@@ -115,7 +115,7 @@ nav ul li a {
   height: 250px; 
   background: rgba(255, 255, 255, 0.1);
   border: 3px solid transparent; 
-  overflow: hidden;
+  overflow: visible;
   transition: border 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
@@ -146,6 +146,15 @@ nav ul li a {
   padding: 10px;
   margin: 0;
   text-align: center;
+}
+
+.drawing {
+  position: relative;
+}
+
+.arrow {
+    width: 20%; 
+    height: auto;
 }
 
 @media screen and (orientation: landscape) {
