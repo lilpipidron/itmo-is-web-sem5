@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function addArrow(event) {
-    const randomOffsetX = Math.floor(Math.random() * 30) - 15; 
     const randomOffsetY = Math.floor(Math.random() * 20) + 10;
 
     // Создаем стрелку
@@ -21,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     arrow.classList.add("arrow");
 
     arrow.style.position = "fixed";
-    arrow.style.left = `${event.clientX + randomOffsetX}px`;
+    arrow.style.left = `${event.clientX}px`;
 
     if (Math.random() > 0.5) {
       arrow.style.top = `${event.clientY + randomOffsetY}px`;
