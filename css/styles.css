@@ -29,6 +29,12 @@ header {
   box-sizing: border-box;
 }
 
+.active {
+  font-weight: bold;
+  color: red; 
+  text-decoration: underline;
+}
+
 .background-image {
   position: fixed;
   top: 0;
