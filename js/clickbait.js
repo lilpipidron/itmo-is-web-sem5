@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function addArrow(event) {
     const randomOffsetY = Math.floor(Math.random() * 20) + 10;
 
-    // Создаем стрелку
     const arrow = document.createElement("img");
     arrow.src = "img/clickbait2.png"; 
     arrow.classList.add("arrow");
