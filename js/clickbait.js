@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const randomOffsetY = Math.floor(Math.random() * 20) + 10;
 
     const arrow = document.createElement("img");
-    arrow.src = "img/clickbait2.png"; 
+    arrow.src = "img/clickbait2.png";
     arrow.classList.add("arrow");
 
     arrow.style.position = "fixed";
@@ -24,10 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (Math.random() > 0.5) {
       arrow.style.top = `${event.clientY + randomOffsetY}px`;
     } else {
-      arrow.style.top = `${event.clientY - randomOffsetY - 30}px`; 
+      arrow.style.transform = "rotate(180deg)";
+      arrow.style.top = `${event.clientY - randomOffsetY - 30}px`;
     }
 
-    arrow.style.zIndex = 7777; 
+    arrow.style.zIndex = 7777;
 
     document.body.appendChild(arrow);
   }

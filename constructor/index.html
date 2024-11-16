@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="розыгрыши, конструктор">
+  <meta name="description" content="Создайте и настройте свой розыгрыш">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конструктор розыгрыша</title>
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="../css/constructor.css" rel="stylesheet">
+  <script src="../js/pageLoadStats.js"></script>
+</head>
+
+<body>
+  <script src="../js/constructor.js"></script>
+  <script src="../js/active.js"></script>
+  <div class="background-image"></div>
+
+  <header>
+    <img src="../img/logo_tmp.png" alt="Поезд мечт" id="logo">
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="menu-item">Текущие розыгрыши</a></li>
+        <li><a href="../winners-reviews/index.html" class="menu-item">Отзывы победителей</a></li>
+        <li><a href="index.html" class="menu-item">Конструктор</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="constructor">
+      <h2>Создайте свой розыгрыш</h2>
+      <form id="raffleForm">
+        <label for="raffleName">Название розыгрыша:</label>
+        <input type="text" id="raffleName" name="raffleName" required>
+
+        <label for="prize">Приз:</label>
+        <input type="text" id="prize" name="prize" required>
+
+        <label for="ticketCount">Количество тикетов:</label>
+        <input type="number" id="ticketCount" name="ticketCount" min="1" required>
+
+        <label for="ticketPrice">Цена за тикет ($):</label>
+        <input type="number" id="ticketPrice" name="ticketPrice" min="0.01" step="0.01" required>
+
+        <button type="submit">Создать розыгрыш</button>
+      </form>
+
+      <div id="resultsContainer">
+        <h3>Созданные розыгрыши:</h3>
+        <ul id="raffleList"></ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contacts">
+    <h3>Контактная информация</h3>
+    <ul>
+      <li>Телефон: +1 (234) 567-8901</li>
+      <li>Email: dreamtrain@obman.com</li>
+      <li>Адрес: пр. Пример, д. 123, корп. 1, г. Москва</li>
+    </ul>
+    <div id="loadStats"></div>
+    <p>&copy; 2024 DreamTrain Inc</p>
+  </footer>
+</body>
+
+</html>
