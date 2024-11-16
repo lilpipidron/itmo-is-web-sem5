@@ -1,23 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("reviewForm");
+  const form = document.getElementById("reviewForm");
 
-    form.addEventListener("submit", (event) => {
-        event.preventDefault();
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-        const username = document.getElementById("username").value.trim();
-        const reviewText = document.getElementById("reviewText").value.trim();
+    const username = document.getElementById("username").value.trim();
+    const reviewText = document.getElementById("reviewText").value.trim();
 
-        if (username && reviewText) {
-            const newReview = document.createElement("div");
-            newReview.classList.add("review");
-            newReview.innerHTML = `<p><strong>${username}:</strong> ${reviewText}</p>`;
+    if (username && reviewText) {
+      const newReview = document.createElement("div");
+      newReview.classList.add("review");
 
-            document.querySelector(".reviews").appendChild(newReview);
+      // Создание структуры отзыва
+      const paragraph = document.createElement("p");
+      const usernameElement = document.createElement("strong");
+      usernameElement.textContent = username;
 
-            form.reset();
+      const reviewTextNode = document.createTextNode(`: ${reviewText}`);
 
-            const audio = new Audio("../audio/jeto-posle-piva.mp3");
-            audio.play();
-        }
-    });
+      paragraph.appendChild(usernameElement); 
+      paragraph.appendChild(reviewTextNode); 
+      newReview.appendChild(paragraph); 
+
+      document.querySelector(".reviews").appendChild(newReview);
+
+      form.reset();
+
+      const audio = new Audio("../audio/jeto-posle-piva.mp3");
+      audio.play();
+    }
+  });
 });
