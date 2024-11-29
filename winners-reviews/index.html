@@ -21,7 +21,7 @@
     <nav>
       <ul>
         <li><a href="../index.html" class="menu-item">Текущие розыгрыши</a></li>
-        <li><a href="index.html" class="menu-item">Отзывы победителей</a></li>
+        <li><a href="index.html" class="menu-item active">Отзывы победителей</a></li>
         <li><a href="../constructor/index.html" class="menu-item">Конструктор</a></li>
       </ul>
     </nav>
@@ -41,6 +41,12 @@
         <p><strong>Андрей Тимченко:</strong> кхааааайф. кококола</p>
       </div>
     </section>
+
+    <!-- Добавляем кнопку "Показать ещё" и прелоадер -->
+    <button id="showMoreBtn">Показать ещё</button>
+    <div id="preloader" style="display: none;">
+      <div class="loader"></div>
+    </div>
 
     <section class="add-review">
       <h3>Оставить отзыв</h3>
@@ -66,6 +72,9 @@
     <div id="loadStats"></div>
     <p>&copy; 2024 DreamTrain Inc</p>
   </footer>
+
+  <!-- Подключаем новый скрипт -->
+  <script src="../js/showMoreReviews.js"></script>
 </body>
 
 </html>
