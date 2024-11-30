@@ -35,8 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
         selectedData.forEach(comment => {
           const reviewDiv = document.createElement('div');
           reviewDiv.classList.add('review');
+
+          const strong = document.createElement('strong');
+          strong.textContent = comment.name + ':';
+
           const p = document.createElement('p');
-          p.innerHTML = `<strong>${comment.name}:</strong> ${comment.body}`;
+          p.appendChild(strong);
+
+          const commentText = document.createTextNode(comment.body);
+          p.appendChild(commentText);
+
           reviewDiv.appendChild(p);
           reviewsSection.appendChild(reviewDiv);
         });
